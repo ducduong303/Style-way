@@ -2,7 +2,7 @@ import axios from "axios";
 // import { NotificationError } from "../common/Notification";
 
 // let BASE_URL = "http://localhost:5000/user"
-let BASE_URL = "https://styleway-app.herokuapp.com/"
+let BASE_URL = "https://styleway-app.herokuapp.com/user"
 // let BASE_URL = "http://localhost:5000"
 const http = axios.create({
     baseURL: BASE_URL,
