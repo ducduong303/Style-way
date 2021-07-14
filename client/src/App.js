@@ -116,7 +116,7 @@ function App() {
                         <Route exact path="/register" render={() => {
                             return isLogger ? <Redirect to="/"></Redirect> : < Register />
                         }}></Route>
-                        <Route exact path="/profile" component={isLogger ? Profile : NotFound}></Route>
+                        {/* <Route exact path="/profile" component={isLogger ? Profile : NotFound}></Route>
                         <Route exact path="/user/reset/:token" component={ResetPassword} ></Route>
                         <Route exact path="/forgot-password" component={ForgotPassword} ></Route>
                         <Route exact path="/user/activate/:activation_token" component={ActiveMail} ></Route>
@@ -131,7 +131,7 @@ function App() {
                         <Route exact path="/blogs/:id" component={BlogDetail}></Route> 
                         {/* <Route exact path="" component={NotFound}></Route> */}
 
-                      <Route path="/admin" component={isAdmin && isLogger ? Admin : NotFound}></Route> 
+                      {/* <Route path="/admin" component={isAdmin && isLogger ? Admin : NotFound}></Route>   */}
 
                     </Switch>
                     {/* <Body></Body> */}

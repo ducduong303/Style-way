@@ -33,7 +33,7 @@ mongoose.connect(URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }, err => {
-    if (err) throw err;
+    if (err) return err;
     console.log('Connected to MongoDB')
 })
 
