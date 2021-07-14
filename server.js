@@ -15,13 +15,13 @@ const path = require('path')
 // Router
 app.use("/user", require('./routes/userRouter'))
 // app.use("/user/image", require('./routes/upload'))
-app.use("/user/category", require('./routes/categoryRouter'))
-app.use("/user/size", require('./routes/sizeRouter'))
-app.use("/user/color", require('./routes/colorRouter'))
-app.use("/user/products", require('./routes/productRouter'))
-app.use("/user/oder", require('./routes/oderRouter'))
-app.use("/user/banner", require('./routes/bannerRouter'))
-app.use("/user/blog", require('./routes/blogRouter'))
+// app.use("/user/category", require('./routes/categoryRouter'))
+// app.use("/user/size", require('./routes/sizeRouter'))
+// app.use("/user/color", require('./routes/colorRouter'))
+// app.use("/user/products", require('./routes/productRouter'))
+// app.use("/user/oder", require('./routes/oderRouter'))
+// app.use("/user/banner", require('./routes/bannerRouter'))
+// app.use("/user/blog", require('./routes/blogRouter'))
 
 
 
@@ -33,7 +33,7 @@ mongoose.connect(URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }, err => {
-    if (err) return err;
+    if (err) throw err;
     console.log('Connected to MongoDB')
 })
 
