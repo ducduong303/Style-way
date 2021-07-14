@@ -13,7 +13,7 @@ app.use(cookieParser())
 const path = require('path')
 
 // Router
-app.use("/user", require('./routes/userRouter'))
+// app.use("/user", require('./routes/userRouter'))
 // app.use("/user/image", require('./routes/upload'))
 // app.use("/user/category", require('./routes/categoryRouter'))
 // app.use("/user/size", require('./routes/sizeRouter'))
