@@ -9,18 +9,31 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 app.use(cookieParser())
-app.use("/users", userRouter)
+// app.use("/users", userRouter)
 const path = require('path')
 
+// Router
+app.use("/user", require('./routes/userRouter'))
+// app.use("/user/image", require('./routes/upload'))
+app.use("/user/category", require('./routes/categoryRouter'))
+app.use("/user/size", require('./routes/sizeRouter'))
+app.use("/user/color", require('./routes/colorRouter'))
+app.use("/user/products", require('./routes/productRouter'))
+app.use("/user/oder", require('./routes/oderRouter'))
+app.use("/user/banner", require('./routes/bannerRouter'))
+app.use("/user/blog", require('./routes/blogRouter'))
+
+
+
 // Connect to MongoDB
-const URI = process.env.MONGODB_URL
+const URI = process.env.MONGOODB_URL
 mongoose.connect(URI, {
     useCreateIndex: true,
     useFindAndModify: false,
     useNewUrlParser: true,
     useUnifiedTopology: true
 }, err => {
-    if (err) throw err;
+    if (err) return err;
     console.log('Connected to MongoDB')
 })
 
