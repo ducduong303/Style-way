@@ -129,7 +129,7 @@ function App() {
                         <Route exact path="/contact" component={Contact}></Route>
                         <Route exact path="/tutorial" component={Tutorial}></Route>
                         <Route exact path="/blogs/:id" component={BlogDetail}></Route>
-                        {/* <Route exact path="" component={NotFound}></Route> */}
+                        <Route exact path="" component={NotFound}></Route>
 
                         <Route path="/admin" component={isAdmin && isLogger ? Admin : NotFound}></Route>
 
