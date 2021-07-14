@@ -42,7 +42,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
 import { ActGettoken, ActGetUser } from './action/auth';
 import './App.scss';
-import "./styles/basic.scss";
+// import "./styles/basic.scss";
 import { history } from "./common/history";
 import Loading from './common/Loading';
 import * as Type from "./contants/Actiontype";
@@ -92,7 +92,7 @@ function App() {
         if (isLogin) {
             dispatch(ActGettoken())
         }
-    }, [auth.isLogger,dispatch])
+    }, [auth.isLogger, dispatch])
     // []
 
     useEffect(() => {
@@ -102,7 +102,7 @@ function App() {
             })
             dispatch(ActGetUser())
         }
-    }, [token,dispatch])
+    }, [token, dispatch])
     useEffect(() => {
         document.querySelector(".App").scrollTop = 0;
     }, [])

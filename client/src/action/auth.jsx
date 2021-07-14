@@ -12,7 +12,7 @@ export const ActLogin = (user) => async (dispatch) => {
 
         dispatch({ type: Type.LOGIN_REQUEST })
 
-        const res = await axios.post("https://styleway-cofiie.herokuapp.com/user/login", {
+        const res = await axios.post("/user/login", {
             email: user.email,
             password: user.password
         })

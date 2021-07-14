@@ -1,39 +1,36 @@
-.App {
-
-  
-}
+@import "./styles/basic.scss";
 
 .mt-20 {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .career-type-popup .ant-modal-footer {
-    display: none;
+  display: none;
 
 }
 
 .kep-login-facebook.metro {
-    border-radius: 0;
-    padding: 10px;
-    font-size: 15px;
-    text-transform: capitalize;
-    margin-top: 10px;
+  border-radius: 0;
+  padding: 10px;
+  font-size: 15px;
+  text-transform: capitalize;
+  margin-top: 10px;
 }
 
 .ant-modal-title {
-    text-align: center;
+  text-align: center;
 }
 
 .career-btn {
-    text-align: center;
+  text-align: center;
 }
 
 .btn-color {
-    background: rgba(0, 0, 128, 0);
+  background: rgba(0, 0, 128, 0);
 }
 
 .title-name {
-    color: green;
+  color: green;
 }
 
 
@@ -77,19 +74,19 @@
 
 
 .changePass {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 
 // Custom Tab
 .tabPane {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-    h3 {
-        color: #ccc;
-    }
+  h3 {
+    color: #ccc;
+  }
 }
 
 
@@ -100,8 +97,8 @@
 
 // Pagination
 .pagination-custom {
-    margin: 10px 0 !important;
-    text-align: right;
+  margin: 10px 0 !important;
+  text-align: right;
 }
 
 // Responsive table
