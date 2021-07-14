@@ -14,9 +14,6 @@ app.use(express.json())
 
 // Routes
 // app.use('/users', userRouter)
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'))
-});
 app.use("/user", require('./routes/userRouter'))
 
 
