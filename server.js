@@ -9,7 +9,7 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 app.use(cookieParser())
-// app.use("/users", userRouter)
+app.use("/users", userRouter)
 const path = require('path')
 
 // Router
