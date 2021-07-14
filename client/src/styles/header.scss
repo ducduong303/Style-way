@@ -1,0 +1,165 @@
+.header {
+    height: 90px;
+    // background-color: #000;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+
+    .ant-popover {
+        top: 65px !important;
+    }
+
+    // border-bottom: 1px solid #ccc;
+    &.active {
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin: 0 auto;
+        box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+        width: 100%;
+        background-color: #fff;
+        animation: slideDown .5s linear forwards;
+        z-index: 100;
+
+        @keyframes slideDown {
+            0% {
+                top: -15%;
+            }
+
+            100% {
+                top: 0;
+            }
+        }
+    }
+
+    &-nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        h3 {
+            color: #000;
+            margin: 0;
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+            margin: 0;
+
+            li a {
+                padding: 0 20px;
+                font-size: 1.4rem;
+                color: #000;
+            }
+        }
+    }
+
+    &-right {
+        display: flex;
+        align-items: center;
+
+        img {
+            cursor: pointer;
+            // width: 25px;
+            // height: 25px;
+            margin: 0 0.5rem;
+        }
+
+        .icon-search {
+            width: 25px;
+            height: 25px;
+        }
+
+        .icon-wishlist {
+            width: 20px;
+            height: 22px;
+        }
+
+        .icon-cart {
+            width: 21px;
+            height: 26px;
+        }
+
+        .icon-user {
+            width: 21px;
+            height: 26px;
+        }
+    }
+}
+
+.overlay-search {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    // background-color: red;
+    .overlay-close {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -10%);
+        width: 30px;
+        height: 30px;
+        border: 1px solid transparent;
+        background-color: #fff;
+        color: #000;
+        border-radius: 50%;
+        font-size: 1.5rem;
+
+
+    }
+
+    .overSearch-form {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -20%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        input {
+            width: 300px;
+            padding: 8px;
+        }
+
+        button {
+            margin-top: 1rem;
+            background: #fff;
+            color: #000;
+        }
+
+    }
+}
+
+.user-info {
+    width: 150px;
+    padding: 10px 10px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+
+    a {
+        color: #000;
+        padding: 3px 0;
+        display: inline-block;
+    }
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    position: relative;
+}
+
+.popver {
+    position: absolute;
+    z-index: 999;
+    bottom: 0;
+}

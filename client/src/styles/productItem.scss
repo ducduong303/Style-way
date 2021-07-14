@@ -1,0 +1,75 @@
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-items {
+    margin-bottom: 20px;
+    position: relative;
+
+    &:hover .product-img .add-product {
+        transform: scale(1);
+    }
+
+    .product-name {
+        font-size: 1.6rem;
+    }
+
+    .anticon svg {
+        font-size: 1.4rem;
+    }
+
+    .product-price {
+        font-size: 1.4rem;
+    }
+
+    .product-img {
+        position: relative;
+
+        .add-product {
+            transition: 0.5s;
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            bottom: 3rem;
+            transform: scale(0);
+            z-index: 2;
+
+            button {
+                @include btn();
+
+                &:hover {
+                    color: #e74c3c;
+                }
+            }
+        }
+    }
+
+
+    .option {
+        position: absolute;
+        top: 0.5rem;
+        right: 1.3rem;
+
+        .wishlist {
+            width: 3.5rem;
+            height: 3.5rem;
+            @include flex();
+            background-color: #fff;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .view {
+            cursor: pointer;
+            width: 3.5rem;
+            height: 3.5rem;
+            @include flex();
+            background-color: #fff;
+            border-radius: 50%;
+            margin-top: 1.5rem;
+        }
+    }
+}
+

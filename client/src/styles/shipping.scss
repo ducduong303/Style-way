@@ -1,0 +1,47 @@
+.shipping {
+    margin-top: 3rem;
+}
+
+.flex {
+    display: flex !important;
+}
+
+.oder-item {
+    padding: 5px;
+    // border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+
+    .oder-desc {
+        padding: 5px;
+        padding-left: 20px;
+
+    }
+}
+
+.oder-address {
+    border: 1px solid #ccc;
+    padding: 1.5rem;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+}
+
+.oder-shipping {
+    justify-content: space-between;
+}
+
+.info-oder {
+    margin-top: 1.5rem;
+
+    h4 {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.oder-info {
+    // margin-top: 1.5rem;
+    border: 1px solid #ccc;
+    padding: 1.5rem;
+    border-radius: 5px;
+}

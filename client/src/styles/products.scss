@@ -1,0 +1,332 @@
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin btn {
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #000;
+    border: none;
+    background: #fff;
+}
+
+.instock {
+    color: green;
+}
+
+.outstock {
+    color: red;
+}
+
+.btn-detail {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #ccc;
+    margin: 0 5px;
+
+}
+
+.btn-size {
+    border-radius: 50%;
+}
+
+.product-lists {
+    margin-top: 20px;
+    width: 100%;
+
+    .product-container {
+        display: flex !important;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+
+    }
+
+}
+
+.creSize {
+    border: 1px solid #ccc;
+    width: 300px;
+    padding: 10px;
+    margin: 10px 0;
+
+    // .add-size {
+    //     .ant-select-selection-search-input {
+    //         display: none;
+    //     }
+    // }
+
+    .add-color {
+        .ant-select-selection-search-input {
+            display: none;
+        }
+    }
+
+}
+
+@mixin flex {
+    display: flex;
+    align-items: center;
+}
+
+// Product-detail
+
+.product-detail {
+    .detail-content {
+        &__img {
+            &:hover .detail-content__img-btn {
+
+                opacity: 1;
+                visibility: visible;
+                transform: scale(1);
+
+            }
+
+            &-thumbs {
+                width: 100%;
+                height: 10rem;
+                margin-bottom: 1rem;
+                cursor: pointer;
+            }
+
+            &-imgbig {
+                position: relative;
+                z-index: 2;
+            }
+
+            &-btn {
+                position: absolute;
+                top: 50%;
+                z-index: 9;
+                background: transparent;
+                width: 4rem;
+                height: 4rem;
+                border: 2px solid #fff;
+                border-radius: 50%;
+                text-align: center;
+                color: #fff;
+                opacity: 0;
+                visibility: hidden;
+                transform: scale(0);
+                transition: 0.5s;
+                outline: none !important;
+
+                &:hover {
+                    background: #000;
+
+                }
+            }
+
+            &-next {
+                right: 2.5rem;
+            }
+
+            &-prev {
+                left: 2.5rem;
+            }
+        }
+
+        &__desc {
+            h3 {
+                font-size: 2.5rem;
+                margin: 0;
+            }
+
+            &-price {
+                margin-top: 5px;
+            }
+
+            &-color {
+                display: flex;
+                align-items: center;
+            }
+
+            &-count {
+                margin-top: 1rem;
+                @include flex();
+
+                h4 {
+                    margin-right: 5px;
+                }
+
+                button {
+                    width: 35px;
+                    height: 35px;
+                    font-size: 1.5rem;
+                    border: 1px solid #2C2E2F;
+
+                    &:nth-child(2) {
+                        border-right: none;
+                        border-left: none;
+                    }
+                }
+            }
+
+            &-status {
+                margin: 1rem 0;
+            }
+
+            &-addCart {
+                font-size: 1.5rem;
+                margin-top: 5px;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 30px;
+                background: #2C2E2F;
+                color: #fff;
+                transition: 0.5s;
+
+                &:hover {
+                    border: 1px solid #2C2E2F;
+                    background: transparent;
+                    color: #2C2E2F;
+                }
+            }
+
+            &-wishlist {
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                margin-top: 1rem;
+
+                &:hover {
+                    color: #e74c3c;
+                }
+
+                &:hover h4 {
+                    color: #e74c3c;
+                }
+
+                h4 {
+                    margin: 0;
+                    padding-left: 5px;
+                }
+            }
+        }
+    }
+
+    .product-footer {
+        margin-top: 10rem;
+    }
+}
+
+.form-review {
+    width: 100%;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 3rem;
+
+    .form-rating {}
+
+    .form-content {
+
+        display: flex;
+        align-items: flex-start;
+
+        textarea {
+            border-radius: 5px;
+            padding: 5px 10px;
+            // width: 100%;
+            margin-left: 2rem;
+        }
+    }
+
+    h5 {
+        margin: 1rem 0;
+    }
+}
+
+.comment-item {
+    padding-bottom: 3rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.comment-avatar {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+// Product Manager
+
+.product-managerHead {
+    padding: 1.5rem 0rem;
+    display: flex;
+    justify-content: space-between;
+
+    .product-managerFil {
+        display: flex;
+
+        input {
+            border: 1px solid #ccc;
+            padding: 8px;
+            border-radius: 5px;
+            outline: none;
+            font-size: 1.3rem;
+        }
+
+        select {
+            border: 1px solid #ccc;
+            padding: 8px;
+            margin: 0 1.5rem;
+            outline: none;
+            border-radius: 5px;
+            font-size: 1.3rem;
+        }
+    }
+
+    button {
+        padding: 8px 10px;
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+        font-size: 1.3rem;
+        background-color: transparent;
+        border: 1px solid #ccc;
+    }
+}
+
+.deleteall {
+    padding: 8px 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    // color: #aaa;
+    margin: 1rem 0;
+
+    .icon-deleteAll {
+        margin-right: 8px;
+    }
+}
+
+.activeDeleteAll {
+    border: 1px solid #2C2E2F;
+    // color: #2C2E2F;
+
+}
+
+.fillter-price {
+    width: 200px;
+    // padding: 1.5rem 0rem;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+
+
+    h5 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .ant-slider {
+        margin-top: 1rem !important;
+        width: 100% !important;
+        margin-bottom: 0 !important;
+    }
+}

@@ -1,0 +1,141 @@
+.ant-table-selection-extra {
+    display: none;
+}
+
+
+
+.ant-image-preview-img {
+    max-width: 50% !important;
+    max-height: 80% !important;
+}
+
+// SLider
+.ant-slider {
+    width: 90% !important;
+    margin: 10px 0;
+}
+
+// .fillter-price {
+//     margin: 20px 0;
+// }
+
+//popover
+.ant-popover {
+    // position: relative;
+    // top: 132px !important;
+
+    &::after {
+        display: none !important;
+    }
+}
+
+// .ant-popover {
+//     top: 65px !important;
+// }
+
+.ant-popover-inner {
+    // background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+
+.ant-popover-inner-content {
+    // padding: 3px 16px !important;
+    padding: 0 !important;
+    color: rgba(0, 0, 0, 0.85);
+
+    span {
+        padding: 3px 16px !important;
+        position: relative;
+
+        p {
+            color: #fff;
+            margin: 0;
+        }
+
+        &::after {
+            position: absolute;
+            background-color: currentColor !important;
+            width: 5px;
+            height: 5px;
+            bottom: -4.2px;
+            left: 50%;
+            transform: translateX(-50%) rotate(45deg);
+            border-top-color: transparent;
+            border-right-color: currentColor;
+            border-bottom-color: currentColor;
+            border-left-color: transparent;
+            content: ''
+        }
+    }
+}
+
+.ant-drawer-close {
+    padding: 17px !important;
+}
+
+// Custom check box table
+.ant-checkbox-indeterminate .ant-checkbox-inner::after {
+    background-color: transparent !important;
+}
+
+.ant-table-title {
+    padding: 16px 7px !important;
+}
+
+.ant-table-selection {
+    // display: none !important;
+}
+
+.ant-modal-close {
+    .ant-modal-close-x {
+        display: flex;
+        height: 30px;
+        width: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
+
+// Rate 
+
+.ant-rate-star-first {
+    span {
+        svg {
+            font-size: 1.3rem !important;
+        }
+    }
+}
+
+// pagination
+
+.ant-pagination {
+    padding: 1rem 0 !important;
+    // li{
+    //     border-radius:5px !important;
+    // }
+}
+
+// Selec
+.ant-select-selector {
+    border-radius: 5px !important;
+    padding: 5px !important;
+    height: 100% !important;
+    // display: flex;
+    // align-items: center;
+
+}
+
+// Slide bar
+.ant-menu-inline,
+.ant-menu-vertical,
+.ant-menu-vertical-left {
+    border-right: transparent !important;
+}
+
+.ant-layout-sider-has-trigger {
+    padding-bottom: 0 !important;
+}

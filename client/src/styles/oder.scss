@@ -1,0 +1,74 @@
+.oder-tab {
+    width: 100%;
+
+    .ant-tabs .ant-tabs-top {
+        width: 100%;
+
+        .ant-tabs-nav-wrap {
+            width: 100%;
+        }
+    }
+
+    .ant-tabs-top>.ant-tabs-nav::before,
+    .ant-tabs-bottom>.ant-tabs-nav::before,
+    .ant-tabs-top>div>.ant-tabs-nav::before,
+    .ant-tabs-bottom>div>.ant-tabs-nav::before {
+        border-bottom: transparent !important;
+    }
+}
+
+.oder-head {
+    display: flex;
+
+    select {
+        margin: 0 10px;
+    }
+}
+
+.title-oderdetail {
+    margin: 2rem 0;
+    border: none !important;
+}
+
+.oder-detail {
+    .oder-info {
+        padding: 20px 10px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+
+        .oder-rigth {
+            display: flex;
+            justify-content: flex-end;
+
+            button {
+                margin: 0 5px;
+            }
+        }
+    }
+}
+
+.myoder {
+    .tab-oder {
+        margin: 1rem 0;
+
+        .ant-tabs-tab {
+            // margin: 0 20px !important;
+            display: flex;
+            justify-content: center;
+        }
+
+        .ant-tabs-nav-wrap {
+            width: 100% !important;
+        }
+    }
+
+    .oder-search {
+        margin-top: 1rem;
+
+        input {
+            border-radius: 5px;
+            padding: 8px 20px;
+            border: 1px solid #ccc;
+        }
+    }
+}

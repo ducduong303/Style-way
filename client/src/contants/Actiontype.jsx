@@ -1,0 +1,69 @@
+export const LOGIN_REQUEST = "LOGIN_REQUEST";
+export const LOGIN_SUCCESS = "LOGIN_SUCCESS";
+export const LOGIN_ERR = "LOGIN_ERR";
+
+export const REGISTER_REQUEST = "REGISTER_REQUEST";
+export const REGISTER_SUCCESS = "REGISTER_SUCCESS";
+export const REGISTER_ERR = "REGISTER_ERR";
+
+export const GET_TOKEN_REQUEST = "GET_TOKEN_REQUEST";
+export const GET_TOKEN_SUCCESS = "GET_TOKEN_SUCCESS";
+export const GET_TOKEN_ERR = "GET_TOKEN_ERR";
+export const CLEAR_TOKEN = "CLEAR_TOKEN";
+
+export const GET_USER_REQUEST = "GET_USER_REQUEST";
+export const GET_USER_SUCCESS = "GET_USER_SUCCESS";
+
+export const LOGOUT_REQUEST = "LOGOUT_REQUEST";
+export const LOGOUT_SUCCESS = "LOGOUT_SUCCESS";
+
+export const FORGOT_REQUEST = "FORGOT_REQUEST";
+
+export const RESET_PASSWORD_REQUEST = "RESET_PASSWORD_REQUEST";
+
+export const UPDATE_INFO = "UPDATE_INFO";
+
+export const CREATE_PRODUCT = "CREATE_PRODUCT";
+
+export const SET_LOADING = "SET_LOADING";
+export const REMOVE_LOADING = "REMOVE_LOADING";
+
+export const CHANGEPAGE = "CHANGEPAGE";
+
+export const ADD_TO_CART = "ADD_TO_CART";
+export const GET_CART = "GET_CART";
+export const CLEAR_CART = "CLEAR_CART";
+
+export const INCREMENT = "INCREMENT";
+export const DECREMENT = "DECREMENT";
+export const DELETE_PRODUCT = "DELETE_PRODUCT";
+export const DELETE_ALL_PRODUCT = "DELETE_ALL_PRODUCT";
+
+export const SHOW_DRAWER = "SHOW_DRAWER";
+export const HIDE_DRAWER = "HIDE_DRAWER";
+
+export const SHIPPING = "SHIPPING";
+export const ODER = "ODER";
+
+
+export const GET_LIST_PRODUCT = "GET_LIST_PRODUCT";
+export const GET_PRODUCT_FAVORITE = "GET_PRODUCT_FAVORITE";
+export const GET_PRODUCT_SELLING= "GET_PRODUCT_SELLING";
+
+
+export const HIDE_BAR= "HIDE_BAR";
+export const SHOW_BAR= "SHOW_BAR";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
