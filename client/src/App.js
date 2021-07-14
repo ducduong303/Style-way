@@ -131,7 +131,7 @@ function App() {
                         <Route exact path="/blogs/:id" component={BlogDetail}></Route>
 
                         <Route exact path="/admin" component={isAdmin && isLogger ? Admin : NotFound}></Route>
-                        <Route exact path="" component={NotFound}></Route>
+                        <Route exact path="*" component={NotFound}></Route>
                     </Switch>
                     {/* <Body></Body> */}
                 </div>
