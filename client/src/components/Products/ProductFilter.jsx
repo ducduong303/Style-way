@@ -187,7 +187,7 @@ function ProductFilter(props) {
                                             onClick={handleChangeCategoryAll}
                                         >Tất cả</button>
                                         {
-                                            categoryList?.map((item, index) => {
+                                              categoryList?.map((item, index) => {
                                                 return (
                                                     <button className="category-item"
                                                         style={{ border: categoryIndex === index ? "1px solid red" : null }}
@@ -219,7 +219,7 @@ function ProductFilter(props) {
                                             style={{ width: "100%" }}
                                             // tooltipVisible
                                             // tipFormatter={null}
-                                             tipFormatter={value => `${value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')} VNĐ`}
+                                            tipFormatter={value => `${value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')} VNĐ`}
                                         />
                                     </SubMenu>
                                 </Menu>
