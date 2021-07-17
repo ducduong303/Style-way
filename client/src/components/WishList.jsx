@@ -8,6 +8,7 @@ import LoadingTable from '../common/LoadingTable';
 import { NotificationSuccess } from '../common/Notification';
 import Header from './Header';
 import Footer from './Footer';
+import TitlePage from './TitlePage';
 function WishList(props) {
     const auth = useSelector(state => state.auth)
     const dispatch = useDispatch()
@@ -109,6 +110,7 @@ function WishList(props) {
     return (
         <>
             <Header></Header>
+            <TitlePage title="Sản phẩm yêu thích"></TitlePage>
             <div className="container mt-5">
                 <Table
                     dataSource={dataSource}

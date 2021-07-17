@@ -67,6 +67,7 @@ const Admin = React.lazy(() => import('./page/Admin'));
 const Login = React.lazy(() => import('./page/Login'));
 const Register = React.lazy(() => import('./page/Register'));
 const ProductDetail = React.lazy(() => import('./components/Products/ProductDetail'));
+// const ProductManager = React.lazy(() => import('./components/Products/ProductManager'));
 
 function App() {
 
@@ -131,7 +132,7 @@ function App() {
                         <Route exact path="/blogs/:id" component={BlogDetail}></Route>
 
                         <Route exact path="/admin" component={isAdmin && isLogger ? Admin : NotFound}></Route>
-                        <Route  path="*" component={NotFound}></Route>
+                        {/* <Route  path="*" component={NotFound}></Route> */}
                     </Switch>
                     {/* <Body></Body> */}
                 </div>

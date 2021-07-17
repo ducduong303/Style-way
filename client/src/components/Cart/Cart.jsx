@@ -7,6 +7,7 @@ import Loading from '../../common/Loading';
 import { NotificationError, NotificationSuccess } from '../../common/Notification';
 import Footer from '../Footer';
 import Header from '../Header';
+import TitlePage from "../TitlePage"
 function Cart(props) {
     const history = useHistory()
     const auth = useSelector(state => state.auth)
@@ -265,6 +266,7 @@ function Cart(props) {
         <>
             {loadingUpdate ? <Loading></Loading> : null}
             <Header></Header>
+            <TitlePage title="Giỏ hàng"></TitlePage>
             {
                 cart?.length === 0 ? <div class="cart-empty">
                     <h3>Bạn chưa có sản phẩm nào trong giỏ hàng </h3>
