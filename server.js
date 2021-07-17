@@ -12,23 +12,12 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 app.use(cookieParser())
-// app.use(fileUpload({
-//     useTempFiles: true
-// }))
 
 // Routes
 // app.use('/users', userRouter)
 app.use("/user", require('./routes/userRouter'))
 app.use("/user/banner", require('./routes/bannerRouter'))
 app.use("/user/products", require('./routes/productRouter'))
-
-app.use("/user/category", require('./routes/categoryRouter'))
-app.use("/user/size", require('./routes/sizeRouter'))
-app.use("/user/color", require('./routes/colorRouter'))
-app.use("/user/oder", require('./routes/oderRouter'))
-app.use("/user/blog", require('./routes/blogRouter'))
-
-app.use("/user/image", require('./routes/upload'))
 // Connect to MongoDB
 const URI = process.env.MONGOODB_URL
 mongoose.connect(URI, {
