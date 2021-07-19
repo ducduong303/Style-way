@@ -376,7 +376,10 @@ function ProductDetail(props) {
                                         </div>
                                     </div>
                                     <div className="detail-content__desc-status">
-                                        <h4>Trạng Thái: {productDetail.countInStock > 0 ? <span className="instock">Còn hàng</span> : <span className="outstock">Hết hàng</span>}</h4>
+                                       {
+                                            productDetail.countInStock === 0 || countIn >= productDetail.countInStock ? null :<h4>Trạng Thái: {productDetail.countInStock > 0  ? <span className="instock">Còn hàng</span> : <span className="outstock">Hết hàng</span>}</h4>
+                                       } 
+                                       
                                     </div>
 
                                     <h4>{countIn >= productDetail.countInStock && `${countIn} Sản phẩm hiện có trong giỏ hàng `}</h4>

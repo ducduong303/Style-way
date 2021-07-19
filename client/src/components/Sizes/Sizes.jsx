@@ -262,7 +262,7 @@ function Sizes(props) {
         <div className="size container">
             <h2 className="title-screen">Kích cỡ</h2>
             <div className="form-add ">
-                <div className="flex-between">
+                <div className="flex-between mb-5">
                     <input className="inputCustom" type="text" placeholder="Tìm Kiếm" onChange={handleSearch} />
                     <button className="btn-add" onClick={() => setVisible(true)}><RiAddLine size={20} />Thêm mới</button>
                 </div>

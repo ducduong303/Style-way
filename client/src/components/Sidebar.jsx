@@ -34,7 +34,7 @@ function Sidebar(props) {
                 <div className="sidebar-container">
                     <div className="sidebarMenu">
                         <div className="sidebar-head">
-                            <img src={logowhite} alt="" ></img>
+                            <Link to="/"><img src={logowhite} alt="" ></img> </Link>
                         </div>
                         {/* defaultSelectedKeys={['1']} */}
                         <Menu className=" active" mode="inline">
@@ -44,6 +44,7 @@ function Sidebar(props) {
                             <SubMenu key="sub1" icon={<ShoppingCartOutlined />} title="Quản lý sản phẩm">
                                 <Menu.Item key="1"><Link to="/admin/products">Tất cả sản phẩm</Link></Menu.Item>
                                 <Menu.Item key="4"><Link to="/admin/create-product">Tạo mới sản phẩm</Link></Menu.Item>
+                                <Menu.Item key="5"><Link to="/admin/category">Phân loại</Link></Menu.Item>
                                 <Menu.Item key="2"><Link to="/admin/size">Kích cỡ</Link></Menu.Item>
                                 <Menu.Item key="3"><Link to="/admin/color">Màu sắc</Link></Menu.Item>
                             </SubMenu>
@@ -59,9 +60,9 @@ function Sidebar(props) {
                             <Menu.Item key="15" icon={<BsBook color="#a2a3b7" />}>
                                 <Link to="/admin/blog">Quản lý bài viết</Link>
                             </Menu.Item>
-                            <Menu.Item key="16" icon={<GiEarthAmerica color="#a2a3b7" />}>
+                            {/* <Menu.Item key="16" icon={<GiEarthAmerica color="#a2a3b7" />}>
                                 <Link to="/">Quay trở lại trang web</Link>
-                            </Menu.Item>
+                            </Menu.Item> */}
                         </Menu>
 
                         {/* <ul className="sidebarList">

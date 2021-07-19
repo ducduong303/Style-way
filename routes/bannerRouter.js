@@ -3,7 +3,7 @@ const bannerCtrl = require('../controllers/bannerCtrl');
 const auth = require('../middlewares/auth');
 const authAdmin = require('../middlewares/authAdmin');
 
-router.get("/", auth, bannerCtrl.getBanners)
+router.get("/", bannerCtrl.getBanners)
 router.post("/", auth, authAdmin, bannerCtrl.createBanner)
 router.delete("/:id", auth, authAdmin, bannerCtrl.deleteBanner)
 

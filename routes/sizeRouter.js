@@ -4,7 +4,7 @@ const auth = require('../middlewares/auth');
 const authAdmin = require('../middlewares/authAdmin');
 
 
-router.get("/", auth, authAdmin, sizeCtrl.getSizes)
+router.get("/", sizeCtrl.getSizes)
 router.post("/", auth, authAdmin, sizeCtrl.createSizes)
 router.delete("/:id", auth, authAdmin, sizeCtrl.deleteSizes)
 router.put("/:id", auth, authAdmin, sizeCtrl.upadateSizes)

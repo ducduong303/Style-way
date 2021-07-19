@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import FooterAdmin from '../components/FooterAdmin';
+// import FooterAdmin from '../components/FooterAdmin';
 import Sidebar from "../components/Sidebar";
 import TopBar from '../components/Topbar';
 import MainAdmin from './MainAdmin';
@@ -16,7 +16,7 @@ function Admin(props) {
                 <div className={`content ${isBar ? "" : "Active-content"}`}>
                     <TopBar></TopBar>
                     <MainAdmin></MainAdmin>
-                    <FooterAdmin></FooterAdmin>
+                    {/* <FooterAdmin></FooterAdmin> */}
                 </div>
 
             </div>

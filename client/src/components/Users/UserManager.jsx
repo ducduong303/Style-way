@@ -493,7 +493,7 @@ function UserManager(props) {
                                     </Form.Item>
                                 }
                                 <Form.Item
-                                    label="role"
+                                    label="Admin"
                                     name="role"
                                 >
                                     <Checkbox

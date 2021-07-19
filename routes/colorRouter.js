@@ -4,7 +4,7 @@ const auth = require('../middlewares/auth');
 const authAdmin = require('../middlewares/authAdmin');
 
 
-router.get("/", auth, authAdmin, colorCtrl.getColors)
+router.get("/",  colorCtrl.getColors)
 router.post("/", auth, authAdmin, colorCtrl.createColor)
 router.delete("/:id", auth, authAdmin, colorCtrl.deleteColors)
 router.put("/:id", auth, authAdmin, colorCtrl.upadateColors)

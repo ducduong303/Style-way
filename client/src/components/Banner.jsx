@@ -7,7 +7,7 @@ import http from "../api/http";
 function Banner(props) {
     const data = [
         {
-            url: "https://res.cloudinary.com/auth/image/upload/v1625725153/product/banner3_kuzfeq.jpg"
+            url: "https://res.cloudinary.com/auth/image/upload/v1626721238/product/banner3_f5v2v2.jpg"
         }
     ]
     // const [loading, setLoading] = useState(false)

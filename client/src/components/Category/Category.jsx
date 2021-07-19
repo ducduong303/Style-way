@@ -1,9 +1,9 @@
 import { Button, Col, Form, Input, Modal, Row, Table } from 'antd';
 import moment from "moment";
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import http from '../../api/http';
-import LoadingTable from '../../common/LoadingTable';
 import { NotificationError, NotificationSuccess } from '../../common/Notification';
+import LoadingSection from '../../common/LoadingSection';
 function Category(props) {
     const [form] = Form.useForm();
     const layout = {
@@ -25,7 +25,7 @@ function Category(props) {
 
         },
         {
-            title: 'Name',
+            title: 'Tên loại mặt hàng',
             dataIndex: 'name',
             key: 'name',
             // sorter: true,
@@ -100,7 +100,7 @@ function Category(props) {
     }
     const fetchData = async () => {
         setLoadingdata(true)
-        const res = await http.get("/category")
+        const res = await http.get(`/category?keyword=${search}`)
         if (res) {
             setDataSource(res.data)
             setLoadingdata(false)
@@ -172,13 +172,30 @@ function Category(props) {
 
         }
     }
+    const [search, setSearch] = useState("")
     useEffect(() => {
         fetchData()
-    }, [])
+    }, [search])
+    const typingTimeoutRef = useRef(null);
+
+    // const handleSearch = (e) => {
+    //     const value = e.target.value
+    //     if (typingTimeoutRef.current) {
+    //         clearTimeout(typingTimeoutRef.current)
+    //     }
+    //     typingTimeoutRef.current = setTimeout(async () => {
+    //         setSearch(value)
+    //     }, 300)
+    // }
+
     return (
         <div className="category container ">
-            <div className="form-add mt-20">
-                <button onClick={() => setVisible(true)}>Thêm mới</button>
+            <div className="form-add ">
+                <div className="flex-between mb-5">
+                    {/* <input className="inputCustom" type="text" placeholder="Tìm Kiếm" onChange={handleSearch} /> */}
+                    <button className="btn-add" onClick={() => setVisible(true)}>Thêm mới</button>
+                </div>
+
 
                 <Table
                     dataSource={dataSource}
@@ -189,7 +206,7 @@ function Category(props) {
                     // loading={loadingdata}
                     loading={{
                         spinning: loadingdata,
-                        indicator: <LoadingTable />
+                        indicator: <LoadingSection />
                     }}
 
                 />
@@ -215,8 +232,7 @@ function Category(props) {
                                 form={form}
                             >
                                 <Form.Item
-
-                                    label="Name"
+                                    label="Tên loại:"
                                     name="name"
                                     style={{ textAlign: "left" }}
                                     value={inputCategory.name}
