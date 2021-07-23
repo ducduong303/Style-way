@@ -404,7 +404,7 @@ function ProductManager(props) {
                     columns={columns}
                     rowSelection={rowSelection}
                     rowKey="_id"
-                    scroll={{ x: 768 }}
+                    scroll={{ x: true }}
                     loading={{
                         spinning: loadingdata,
                         indicator: <LoadingSection />

@@ -410,7 +410,6 @@ function OderManager(props) {
         <div className="container mt-2">
             <h2 className="title-screen">Danh sách đơn hàng</h2>
             <div className="oder-head">
-
                 <input type="text" className="inputCustom" placeholder="Tìm kiếm đơn hàng" onChange={handleSearch} />
                 <select name="" id="" className="inputCustom" onChange={handleFilterOder}>
                     <option value="">Trạng thái đơn hàng</option>
@@ -445,6 +444,7 @@ function OderManager(props) {
                 pagination={false}
                 columns={columns}
                 rowSelection={rowSelection}
+                scroll={{ x: true }}
                 rowKey="_id"
                 loading={{
                     spinning: loadingdata,

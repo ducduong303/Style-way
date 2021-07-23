@@ -192,6 +192,7 @@ function OderDetail(props) {
                 </div>
                 <br />
                 <Table
+                    scroll={{ x: true }}
                     dataSource={dataSource}
                     pagination={false}
                     columns={columns}

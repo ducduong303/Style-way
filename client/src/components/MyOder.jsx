@@ -302,6 +302,7 @@ function MyOder(props) {
                 </Tabs>
             </div>
             <Table
+             scroll={{ x: true }}
                 dataSource={dataSource}
                 pagination={false}
                 // pagination={{ defaultPageSize: 10, total: dataSource?.length }}
@@ -342,6 +343,7 @@ function MyOder(props) {
                             <h5>Ngày đặt hàng: {moment(oderView?.createdAt).format('DD/MM/YYYY')}</h5>
                         </div>
                         <Table
+                         scroll={{ x: true }}
                             style={{ margin: "20px 0" }}
                             dataSource={dataOderView}
                             pagination={false}

@@ -8,6 +8,7 @@ import ProductSelling from '../components/Products/ProductSelling';
 import ProductsList from '../components/Products/ProductsList';
 import TitleSection from '../components/TitleSection';
 import Blog from '../components/Blog/Blog';
+import ProductSale from '../components/Products/ProductSale';
 
 
 function Home(props) {
@@ -73,6 +74,8 @@ function Home(props) {
                     {
                         loading ? <LoadingSection></LoadingSection> : <ProductsList status={status} loadingMore={loadingMore} handleViewMore={handleViewMore} products={products}></ProductsList>
                     }
+                     <TitleSection title="Sản phẩm khuyến mãi"></TitleSection>
+                     <ProductSale></ProductSale>
                     <TitleSection title="Sản phẩm được yêu thích "></TitleSection>
                     <ProductFavorite></ProductFavorite>
                     <TitleSection title="Sản phẩm bán chạy"></TitleSection>

@@ -147,6 +147,7 @@ function BlogManager(props) {
                 dataSource={dataSource}
                 pagination={false}
                 columns={columns}
+                scroll={{ x: true }}
                 // rowSelection={rowSelection}
                 rowKey="_id"
                 loading={{

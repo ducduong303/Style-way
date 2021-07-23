@@ -39,7 +39,7 @@ function Sidebar(props) {
                         {/* defaultSelectedKeys={['1']} */}
                         <Menu className=" active" mode="inline">
                             <Menu.Item key="11" icon={<HomeOutlined style={{ fontSize: "13px" }} />}>
-                                <Link to="/admin">Trang chủ</Link>
+                                <Link to="/">Trang chủ</Link>
                             </Menu.Item>
                             <SubMenu key="sub1" icon={<ShoppingCartOutlined />} title="Quản lý sản phẩm">
                                 <Menu.Item key="1"><Link to="/admin/products">Tất cả sản phẩm</Link></Menu.Item>

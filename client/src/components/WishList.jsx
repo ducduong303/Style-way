@@ -113,6 +113,7 @@ function WishList(props) {
             <TitlePage title="Sản phẩm yêu thích"></TitlePage>
             <div className="container mt-5">
                 <Table
+                 scroll={{ x: true }}
                     dataSource={dataSource}
                     pagination={false}
                     // pagination={{ defaultPageSize: 10, total: dataSource?.length }}

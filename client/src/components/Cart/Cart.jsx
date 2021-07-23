@@ -279,6 +279,7 @@ function Cart(props) {
                                 <Table
                                     dataSource={dataSource}
                                     // pagination={false}
+                                    scroll={{ x: true }}
                                     pagination={{ defaultPageSize: 10, total: dataSource?.length }}
                                     columns={columns}
                                     rowSelection={rowSelection}

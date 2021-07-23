@@ -272,6 +272,7 @@ function Sizes(props) {
                 <Table
                     dataSource={dataSource}
                     pagination={false}
+                    scroll={{ x: true }}
                     columns={columns}
                     rowSelection={rowSelection}
                     rowKey="_id"

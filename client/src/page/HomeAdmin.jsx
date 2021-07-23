@@ -283,7 +283,7 @@ function HomeAdmin(props) {
                             columns={columns}
                             // rowSelection={rowSelection}
                             rowKey="_id"
-                            scroll={{ x: 768 }}
+                            // scroll={{ x: 768 }}
                             loading={{
                                 spinning: loadingPr,
                                 indicator: <LoadingSection />
@@ -298,7 +298,7 @@ function HomeAdmin(props) {
                             columns={columns}
                             // rowSelection={rowSelection}
                             rowKey="_id"
-                            scroll={{ x: 768 }}
+                            // scroll={{ x: 768 }}
                             loading={{
                                 spinning: loadingSel,
                                 indicator: <LoadingSection />
@@ -313,7 +313,7 @@ function HomeAdmin(props) {
                             columns={columnsBlog}
                             // rowSelection={rowSelection}
                             rowKey="_id"
-                            scroll={{ x: 768 }}
+                            // scroll={{ x: 768 }}
                             loading={{
                                 spinning: loadingBlog,
                                 indicator: <LoadingSection />

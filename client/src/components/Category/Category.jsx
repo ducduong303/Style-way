@@ -198,6 +198,7 @@ function Category(props) {
 
 
                 <Table
+                 scroll={{ x: true }}
                     dataSource={dataSource}
                     pagination={false}
                     columns={columns}

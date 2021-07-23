@@ -82,7 +82,6 @@ function TopBar(props) {
                 <div className="topleft">
                     <div className="bar">
                         <AiOutlineBars size={25} onClick={handleBar} />
-                      
                     </div>
                 </div>
 

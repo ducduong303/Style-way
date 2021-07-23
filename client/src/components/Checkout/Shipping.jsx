@@ -183,7 +183,7 @@ function Shipping(props) {
                 },
                 isPaid: false,
                 paymentID: uuidv4(),
-                paymentMethod: "Cash On Delivery",
+                paymentMethod: "Thanh toán khi nhận hàng",
                 totalPrice: total,
             }
             const res = await http.post("/oder", {
@@ -423,6 +423,7 @@ function Shipping(props) {
                                     <>
                                         <h2>Gói hàng của bạn </h2>
                                         <Table
+                                         scroll={{ x: true }}
                                             dataSource={dataSource}
                                             pagination={false}
                                             columns={columns}
